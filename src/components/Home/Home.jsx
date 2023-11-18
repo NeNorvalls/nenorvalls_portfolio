@@ -47,6 +47,15 @@ const Home = () => {
           am eager to contribute my skills and a fresh perspective to a team
           that values innovation and excellence.
         </p>
+        <p className={s.contributionParagraph}>
+          Beyond my formal education, I actively engage in continuous learning by participating in various online coding camps. 
+          It's not just about Codefinity; I seek opportunities from a multitude of platforms to fill up any knowledge gaps. 
+          This dedication reflects my commitment to staying at the forefront of industry trends and technologies, addressing not just what I know but also identifying and filling any lacking knowledge.
+          Proficient in HTML, CSS, and JavaScript, I approach challenges with enthusiasm and a problem-solving mindset. 
+          My journey is not limited to what I've learned so far; instead, I am driven to explore and master advanced coding languages.
+          Eager to contribute my diverse skill set to a dynamic team, I am actively seeking an environment that values adaptability and continuous learning. 
+          I am excited about the prospect of leveraging my current skills while embracing the opportunity to learn and apply advanced coding languages to contribute innovative solutions to projects.
+        </p>
         <p className={s.readyParagraph}>
           Ready to see what I've been working on?
         </p>

@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 80%;
+  margin: 2rem auto;
 }
 
 .flipCard {

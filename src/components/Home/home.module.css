@@ -100,15 +100,16 @@
   margin: 1.5rem;
   font-size: 26px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .contributionParagraph {
   margin: 2rem;
   font-size: 18px;
   line-height: 1.5;
+  word-spacing: 2px;
 }
 
-/* Responsive styles */
 @media only screen and (max-width: 1200px) {
   .skillsParagraph {
     font-size: 24px;
