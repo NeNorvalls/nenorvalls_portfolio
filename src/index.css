@@ -7,7 +7,6 @@ body {
   letter-spacing: 2px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 p,
 h1,
 h2,
@@ -16,5 +15,5 @@ h4,
 h5,
 h6 {
   letter-spacing: 2px;
-  line-height: 1.5;
+  text-align: center;
 }

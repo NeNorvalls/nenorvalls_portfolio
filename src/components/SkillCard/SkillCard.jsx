@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import skillCardStyles from './skillCard.module.css';
+import s from './skillCard.module.css';
 
 const SkillCard = ({ title, description }) => {
   const [flipped, setFlipped] = useState(false);
@@ -9,12 +9,12 @@ const SkillCard = ({ title, description }) => {
   };
 
   return (
-    <div className={`${skillCardStyles.flipCard}${flipped ? ` ${skillCardStyles.clicked}` : ''}`} onClick={flipCard}>
-      <div className={skillCardStyles.flipCardInner}>
-        <div className={skillCardStyles.flipCardFront}>
+    <div className={`${s.flipCard}${flipped ? ` ${s.clicked}` : ''}`} onClick={flipCard}>
+      <div className={s.flipCardInner}>
+        <div className={s.flipCardFront}>
           <h2>{title}</h2>
         </div>
-        <div className={skillCardStyles.flipCardBack}>
+        <div className={s.flipCardBack}>
           <p>{description}</p>
         </div>
       </div>
@@ -24,7 +24,7 @@ const SkillCard = ({ title, description }) => {
 
 const SkillsContainer = () => {
   return (
-    <div className={skillCardStyles.cardContainer}>
+    <div className={s.cardContainer}>
       <SkillCard
         title="HTML5"
         description="Proficient in crafting semantic and accessible markup for robust web applications."

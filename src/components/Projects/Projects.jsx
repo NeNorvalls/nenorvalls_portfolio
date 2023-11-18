@@ -1,22 +1,22 @@
 import React from 'react';
-import projects from './projects.module.css';
+import s from './projects.module.css';
 
 const Project = ({ title, imageUrl, description, technologies, githubLink, demoLink }) => (
-  <div className={projects.projectWrapper}>
-    <h2 className={projects.title}>{title}</h2>
-    <img src={imageUrl} alt={title} className={projects.projectImage} />
-    <p className={projects.description}>{description}</p>
-    <p className={projects.technologies}>Technologies: {technologies}</p>
-    <div className={projects.linkWrapper}>
-      <a href={githubLink} className={projects.link}>GitHub Link</a>
-      <a href={demoLink} className={projects.link}>Live Demo Link</a>
+  <div className={s.projectWrapper}>
+    <h2 className={s.title}>{title}</h2>
+    <img src={imageUrl} alt={title} className={s.projectImage} />
+    <p className={s.description}>{description}</p>
+    <p className={s.technologies}>Technologies: {technologies}</p>
+    <div className={s.linkWrapper}>
+      <a href={githubLink} className={s.link}>GitHub Link</a>
+      <a href={demoLink} className={s.link}>Live Demo Link</a>
     </div>
   </div>
 );
 
 const ProjectSection = ({ sectionTitle, projects }) => (
   <div>
-    <h1 className={projects.sectionTitle}>{sectionTitle}</h1>
+    <h1 className={s.sectionTitle}>{sectionTitle}</h1>
     {projects.map((project, index) => (
       <Project key={index} {...project} />
     ))}
@@ -103,7 +103,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={projects.wrapper}>
+    <div className={s.wrapper}>
       <ProjectSection sectionTitle="React Projects" projects={reactProjects} />
       <ProjectSection sectionTitle="HTML Projects" projects={htmlProjects} />
     </div>
