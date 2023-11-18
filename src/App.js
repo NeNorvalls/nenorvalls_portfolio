@@ -5,7 +5,6 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import SkillsContainer from "./components/SkillCard/SkillCard";
-import Certificates from "./components/Certificates/Certificates";
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/skillcard" element={<SkillsContainer />} />
-        <Route path="/certificates" element={<Certificates />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
