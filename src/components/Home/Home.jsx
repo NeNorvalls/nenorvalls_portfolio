@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import s from "./home.module.css";
 import profilePhoto from "../../images/nenorvalls.jpg";
 import SkillsContainer from "../SkillCard/SkillCard";
+import Certificates from "../Certificates/Certificates";
 
 const Home = () => {
   return (
@@ -53,6 +54,7 @@ const Home = () => {
         <Link to="projects" className={s.exploreButton}>
           Explore My Projects
         </Link>
+        <Certificates />
 
         
        

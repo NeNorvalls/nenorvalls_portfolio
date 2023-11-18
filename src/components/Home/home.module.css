@@ -4,6 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  font-size: 14px;
+  padding: 1.5rem;
 }
 
 .sidebar {
@@ -26,12 +28,11 @@
 }
 
 .introParagraph {
-  margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   left: 0;
-  line-height: 2;
+  line-height: 1.6;
   padding: 20px;
 }
 
@@ -53,6 +54,7 @@
 @media (min-width: 1024px) {
   .introParagraph {
     font-size: 1.6rem;
+    margin-bottom: 5rem;
   }
 
   .contactInfo {
@@ -102,8 +104,9 @@
 }
 
 .contributionParagraph {
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin: 2rem;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 /* Responsive styles */
@@ -149,6 +152,9 @@
 
 .readyParagraph {
   margin-bottom: 20px;
+  font-size: 18px;
+  padding: 1.5rem;
+  font-weight: 600;
 }
 
 .exploreButton {
@@ -158,6 +164,7 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .exploreButton:hover {

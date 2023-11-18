@@ -6,14 +6,13 @@
 }
 
 .flipCard {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   perspective: 1000px;
   cursor: pointer;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.1s;
-  margin: 20px;
 }
 
 .flipCard:hover .flipCardInner,
@@ -44,12 +43,14 @@
 }
 
 .flipCardFront {
-  background-color: #f1f1f1;
-  color: #333;
+  background: url("https://i.ibb.co/GQByDtP/bacground.jpg") center/cover;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 .flipCardBack {
   background-color: darkred;
   color: white;
   transform: rotateY(180deg);
+  letter-spacing: 2px;
 }

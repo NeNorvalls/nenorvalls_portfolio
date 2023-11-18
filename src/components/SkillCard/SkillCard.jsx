@@ -44,11 +44,6 @@ const SkillsContainer = () => {
         and intuitive interactions."
       />
       <SkillCard
-        title="UX Design"
-        description="Knowledgeable in user experience design principles to create
-        seamless and enjoyable user journeys."
-      />
-      <SkillCard
         title="GitHub REPO"
         description="Proficient in using Git and GitHub for version control,
         ensuring collaborative and organized code repositories."
