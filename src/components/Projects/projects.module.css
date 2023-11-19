@@ -47,8 +47,9 @@
 }
 
 .projectImage {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 630px;
+  max-height: 750px;
   margin: 20px auto;
   align-items: center;
   text-align: center;
@@ -86,12 +87,13 @@
   border-radius: 5px;
   color: #fff;
   background-color: #3498db;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .link:hover {
-  background-color: #3498db;
+  background-color: #297fb8;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .scrollButton {
