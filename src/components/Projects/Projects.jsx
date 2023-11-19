@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import s from './projects.module.css';
 
 const Project = ({ title, imageUrl, description, technologies, githubLink, demoLink }) => (
@@ -15,38 +15,58 @@ const Project = ({ title, imageUrl, description, technologies, githubLink, demoL
 );
 
 const ProjectSection = ({ sectionTitle, projects }) => (
-  <div>
+  <div className={s.projectSection}>
     <h1 className={s.sectionTitle}>{sectionTitle}</h1>
-    {projects.map((project, index) => (
-      <Project key={index} {...project} />
-    ))}
+    <div className={s.projectsContainer}>
+      {projects.map((project, index) => (
+        <Project key={index} {...project} />
+      ))}
+    </div>
   </div>
 );
 
 const Projects = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    
+      setShowScrollButton(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const reactProjects = [
     {
-      title: "react_jsframework_ecom_shop",
+      title: "React E-Com",
       imageUrl: "https://i.ibb.co/PGhvSLG/react-ecom-shopping-store.png",
       description: "This project involves building a web application using React and designing it with Styled-components.",
       technologies: "HTML, JavaScript, React, Redux, Styled-Components",
-      githubLink: "https://github.com/NeNorvalls/react_jsframework_ecom_shop.git",
+      githubLink: "https://github.com/NeNorvalls/react_ecom_shop.git",
       demoLink: "https://react-ecom-shopping-store.netlify.app/"
     },
     {
-      title: "bits_and_bots_final_exam2",
+      title: "WordPress Project",
       imageUrl: "https://i.ibb.co/WGK3SkW/bits-and-bots.png",
       description: "This project is created with React, Sass, Bootstrap, headless WordPress CMS, and UI design.",
       technologies: "React, Sass, Wordpress, Bootstrap, BEM",
-      githubLink: "https://github.com/NeNorvalls/bits_and_bots_final_exam2.git",
+      githubLink: "https://github.com/NeNorvalls/bits-bots_exam2.git",
       demoLink: "https://bits-and-bots.netlify.app/"
     },
     {
       title: "Car App",
       imageUrl: "https://i.ibb.co/dtRkxNt/Picture5.png",
       description: "Explore a collection of cool cars in this React-based app. Find your dream car with ease using the search functionality.",
-      technologies: "React, CSS Modules",
-      githubLink: "https://github.com/NeNorvalls/cars_hooks_react.git",
+      technologies: "React, CSS Modules, Hooks",
+      githubLink: "https://github.com/NeNorvalls/cars_react_app.git",
       demoLink: "https://car-hook-app.netlify.app/"
     },
   ];
@@ -61,7 +81,7 @@ const Projects = () => {
       demoLink: "https://ice-creams-shop.netlify.app/"
     },
     {
-      title: "neno_SP2_auctions",
+      title: "Auction Web",
       imageUrl: "https://i.ibb.co/QXCfdZ7/neno-sp2auctions.png",
       description: "This project is designed with knowledge and mastery in HTML, Bootstrap, Sass & Javascript.",
       technologies: "HTML, CSS, JavaScript",
@@ -77,7 +97,7 @@ const Projects = () => {
       demoLink: "https://nenorvalls-community-science-museum.netlify.app/"
     },
     {
-      title: "Contact-Us-Web-App",
+      title: "Contact Form",
       imageUrl: "https://i.ibb.co/bdh4vK7/contact-form-cover.jpg",
       description: "The 'Contact Us Web App' is built using HTML, CSS, and JavaScript.",
       technologies: "HTML, CSS, JavaScript",
@@ -104,8 +124,17 @@ const Projects = () => {
 
   return (
     <div className={s.wrapper}>
-      <ProjectSection sectionTitle="React Projects" projects={reactProjects} />
-      <ProjectSection sectionTitle="HTML Projects" projects={htmlProjects} />
+         <div className={s.reactProjectsSection}>
+        <ProjectSection sectionTitle="React Projects" projects={reactProjects} />
+      </div>
+      <div className={s.htmlProjectsSection}>
+        <ProjectSection sectionTitle="HTML Projects" projects={htmlProjects} />
+      </div>
+      {showScrollButton && (
+        <button className={s.scrollButton} onClick={scrollToTop}>
+          Scroll to Top
+        </button>
+      )}
     </div>
   );
 };
