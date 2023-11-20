@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={s.header}>
-      <div className={s.logo}>NeNorvalls</div>
+      <div><a className={s.logo}href="/">NeNorvalls</a></div>
 
       <div className={`${s.menuIcon} ${showNav ? s.close : ''}`} onClick={toggleNav}>
           <div className={s.hamburgerLine}></div>
