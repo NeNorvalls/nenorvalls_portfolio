@@ -18,9 +18,6 @@ const Home = () => {
             <p className={s.contactInfo}>
             <strong>Mobile number:</strong> +4791129757
             </p>
-            <p className={s.github}>
-            <strong>Github:</strong> https://github.com/NeNorvalls
-            </p>
             <p className={s.contactInfo}>
             <strong>Email:</strong> honeygeeh27@gmail.com
             </p>

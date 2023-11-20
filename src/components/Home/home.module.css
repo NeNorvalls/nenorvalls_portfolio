@@ -40,11 +40,6 @@
   font-size: 1.2rem;
 }
 
-.github {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
 @media (min-width: 768px) {
   .introParagraph {
     font-size: 1rem;
