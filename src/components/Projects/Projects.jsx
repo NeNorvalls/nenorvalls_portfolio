@@ -46,14 +46,6 @@ const Projects = () => {
   };
   const reactProjects = [
     {
-      title: "nextjs-google-clone",
-      imageUrl: "https://i.ibb.co/Kh1nLt8/Google-clone.jpg",
-      description: "This project is a Google clone crafted with React, Tailwind CSS, and Next.js for efficient server-side rendering and routing.",
-      technologies: "HTML, JavaScript, React, Tailwind CSS, Next.js",
-      githubLink: "https://github.com/NeNorvalls/nextjs-google-clone.git",
-      demoLink: "https://nextjs-google-clone.netlify.app/"
-    },
-    {
       title: "React E-Com",
       imageUrl: "https://i.ibb.co/PGhvSLG/react-ecom-shopping-store.png",
       description: "This project involves building a web application using React and designing it with Styled-components.",
