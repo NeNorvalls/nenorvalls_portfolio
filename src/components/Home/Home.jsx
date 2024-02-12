@@ -19,7 +19,7 @@ const Home = () => {
             <strong>Mobile number:</strong> +4791129757
             </p>
             <p className={s.contactInfo}>
-            <strong>Email:</strong> honeygeeh27@gmail.com
+            <strong>Email:</strong> nenorvalls@gmail.com
             </p>
             <p className={s.contactInfo}>
             <strong>Location:</strong> Bergen, Norway
