@@ -65,13 +65,25 @@ const SkillsContainer = () => {
       />
       <SkillCard
         title="Node.js"
-        description="Experienced in styling with precision, utilizing modern CSS features to create visually appealing and responsive designs."
+        description="Experienced in styling with precision, utilizing modern CSS features 
+        to create visually appealing and responsive designs."
       />
       <SkillCard
         title="Netlify Deploy"
         description="Experienced in deploying web applications to Netlify for
         seamless and automated deployment workflows."
       />
+      <SkillCard
+        title="Next.js Development"
+        description="Developing web applications , utilizing its powerful features for 
+        server-side rendering, static site generation, and client-side routing with Next.js."
+      />
+      <SkillCard
+        title="Tailwind CSS Styling"
+        description="Using Tailwind CSS for styling web applications, leveraging its 
+        utility-first approach to create responsive and customizable UI components."
+      />
+
     </div>
   );
 };
