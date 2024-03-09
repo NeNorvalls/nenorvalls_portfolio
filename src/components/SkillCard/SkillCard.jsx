@@ -73,7 +73,7 @@ const SkillsContainer = () => {
         description="Experienced in deploying web applications to Netlify for
         seamless and automated deployment workflows."
       />
-      <SkillCard
+      {/* <SkillCard
         title="Next.js Development"
         description="Developing web applications , utilizing its powerful features for 
         server-side rendering, static site generation, and client-side routing with Next.js."
@@ -82,7 +82,7 @@ const SkillsContainer = () => {
         title="Tailwind CSS Styling"
         description="Using Tailwind CSS for styling web applications, leveraging its 
         utility-first approach to create responsive and customizable UI components."
-      />
+      /> */}
 
     </div>
   );
